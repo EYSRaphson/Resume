@@ -1,4 +1,7 @@
 
+@highlight: #53c0be;
+@link:      #B9B5A2;
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -18,13 +21,19 @@ body {
   font: 400 14px/1.6 "Open Sans", sans-serif;
 }
 
+a {
+  color: @link;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 h1, h2, h3 {
   margin: 5px 0;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, a {
+h1, h2, h3 {
   color: #353535;
 }
 
@@ -32,17 +41,26 @@ h2 {
   margin-bottom: 10px;
 }
 
-p {
+p,
+dd {
   margin-bottom: 30px;
 }
 
-strong {
+strong,
+.strong,
+dt {
   font-weight: 600;
+}
+
+strong,
+.highlight {
+  color:@highlight
 }
 
 hr {
   background-color: #e7e7e7;
   border: 0;
+  border-bottom: 1px solid fade(#e7e7e7, 80%);
   color: #e7e7e7;
   height: 1px;
   margin: 50px 0;
@@ -70,7 +88,7 @@ hr {
   }
 
   .description {
-    color: #cecece;
+    color: @highlight; //#cecece;
     font: 100 46px "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: .75;
     margin-bottom: 30px;
@@ -79,6 +97,6 @@ hr {
 }
 
 #resume {
-  padding: 11.5% 4% 0 50%;
+  padding: 10.6% 4% 0 50%;
   width: 100%;
 }
