@@ -1,5 +1,5 @@
 
-@highlight: #53c0be;
+@highlight: #33cc99; //53c0be;
 @link:      #929397;
 
 * {
@@ -23,8 +23,13 @@ body {
 
 a {
   color: @link;
-  font-weight: 600;
+  // font-weight: 600;
   text-decoration: underline;
+
+  &:hover {
+    color: @highlight;
+    text-decoration: none;
+  }
 }
 
 h1, h2, h3 {
