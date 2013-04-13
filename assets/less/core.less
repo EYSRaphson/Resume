@@ -126,24 +126,38 @@ hr {
   }
 }
 
-.formations {
+.reduced (){
+  #header {
+    height: auto;
+    padding: 5%;
+    position: relative;
+    width: 100%;
+  }
 
-  // dl {
-  //   overflow: hidden;
-  // }
-
-  // dt,
-  // dd {
-  //   width: 50%
-  // }
-
-  // dt:nth-child(odd),
-  // dd:nth-child(odd) {
-  //   float: left
-  // }
-
-  // dt:nth-child(even),
-  // dd:nth-child(even) {
-  //   float: right
-  // }
+  #resume {
+    padding: 5% 5% 10%;
+    margin-left: 0;
+    width: 100%;
+  }
 }
+
+@media screen and (max-width: 1000px) {
+  .reduced;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+  body {
+    font: 400 24px/1.8 "Open Sans", sans-serif;
+  }
+
+  .headline {
+    font: 400 28px/1.8 "Open Sans", sans-serif;
+    margin-top: 0;
+  }
+
+  .reduced;
+
+  .break {
+    display: none;
+  }
+} 
