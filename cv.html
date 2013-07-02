@@ -14,7 +14,15 @@
   <link rel="stylesheet/less" href="assets/less/core.less">
   <script src="assets/lib/less-1.3.0.min.js"></script>
    -->
-  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41496273-1', 'michael-lefebvre.com');
+    ga('send', 'pageview');
+  </script>
 
 <!--[if lt IE 9]>
 <script type="text/javascript">
@@ -51,7 +59,7 @@ document.createElement("footer");
         <h3 class="-strong">TL;DR;</h3>
         <p class="headline">
           Développeur web full-stack avec 16 ans d'experiences dans le digital, 33 ans.<br class="break">
-          Actuellement freelance, a travaillé chez <a href="http://ultranoir.com/" target="_blank">Ultranoir</a> et <a href="http://happyend.fr/">Happyend</a> pour Dior, Samsung, Diesel, Clarins...
+          Actuellement freelance, a travaillé chez <a href="http://ultranoir.com/" target="_blank">Ultranoir</a> et <a href="http://happyend.fr/" target="_blank">Happyend</a> pour Dior, Samsung, Diesel, Clarins...
         <p>
 
         <hr>
@@ -91,7 +99,7 @@ document.createElement("footer");
         <p>
           <a href="https://github.com/Tapioca" target="_blank">Tapioca</a>, un Backoffice flexible en MongoDb / PHP 5.3 / Backbone. En production sur <a href="http://backstage.dior.com" target="_blank">backstage.dior.com</a> et <a href="http://www.bouffesdunord.com" target="_blank">bouffesdunord.com</a>. Le projet est en cours de ré-écriture/documentation pour être distribué.
         <p>
-        <a href="http://www.bouffesdunord.com"  target="_blank"><img src="assets/screens/bdn.png" alt="" class="screenshot"></a>
+        <a href="http://www.bouffesdunord.com" target="_blank"><img src="assets/screens/bdn.png" alt="" class="screenshot"></a>
 
         <p>
           Création de plugins <a href="https://github.com/michael-lefebvre/Backbone-AppRouter" target="_blank">backbone</a> et <a href="https://github.com/michael-lefebvre/jquery.outside" target="_blank">jQuery</a>. Contribution à des <a href="https://github.com/jamesflorentino/nanoScrollerJS" target="_blank">projets open-source</a>.
@@ -180,29 +188,5 @@ document.createElement("footer");
       
     </section>
   </div>
-
-
-<script>
-(function()
-{
-  var links = document.getElementsByTagName('a');
-  
-  for(var i = 0 ; i < links.length ; ++i)
-  {
-      if(links[i].className == 'external-link')
-      {
-          links[i].onclick = function()
-          {
-              window.open(this.href);
-              return false; 
-          }
-          
-          links[i].className += " external-link-active";
-
-      }
-  }
-})();
-
-</script>       
 </body>
 </html>
